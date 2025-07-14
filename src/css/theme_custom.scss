@@ -1,0 +1,51 @@
+// src/css/theme_custom.scss
+
+.theme-hero {
+    background: linear-gradient(135deg, #e3f2fd 0%, #90caf9 100%);
+    padding: 5rem 0 3rem 0;
+    text-align: center;
+  }
+  .theme-hero-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #1565c0;
+  }
+  .theme-hero-subtitle {
+    font-size: 1.25rem;
+    color: #333;
+    margin-bottom: 2rem;
+  }
+  
+  .theme-features, .theme-features-extended {
+    .card {
+      border-radius: 1rem;
+      transition: transform 0.2s;
+      &:hover {
+        transform: translateY(-5px) scale(1.03);
+        box-shadow: 0 6px 24px rgba(21,101,192,0.15);
+      }
+    }
+    .theme-feature-icon {
+      font-size: 2.5rem;
+      color: #1976d2;
+    }
+  }
+  
+  .theme-about img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 1rem;
+  }
+  
+  @media (max-width: 767.98px) {
+    .theme-hero {
+      padding: 3rem 0 2rem 0;
+    }
+    .theme-hero-title {
+      font-size: 2rem;
+    }
+    .theme-features .card,
+    .theme-features-extended .card {
+      margin-bottom: 1.5rem;
+    }
+  }
